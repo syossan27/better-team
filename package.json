@@ -1,0 +1,31 @@
+{
+  "name": "better-team",
+  "version": "1.0.0",
+  "description": "better-team is simple KPT tool.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/syossan27/better-team.git"
+  },
+  "keywords": [
+    "KPT"
+  ],
+  "author": "syossan27",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/syossan27/better-team/issues"
+  },
+  "homepage": "https://github.com/syossan27/better-team#readme",
+  "dependencies": {
+    "express": "^4.13.3",
+    "gulp": "^3.9.0",
+    "radium": "^0.14.3",
+    "react": "^0.14.2",
+    "socket.io": "^1.3.7",
+    "webpack": "^1.12.3",
+    "webpack-stream": "^2.1.1"
+  }
+}
