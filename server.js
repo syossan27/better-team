@@ -10,8 +10,16 @@ app.get('/', function(req, res) {
 });
 
 io.on('connection', function(socket){
-  socket.on('message', function(msg) {
-    io.emit('message', msg);
+  socket.on('send keep', function(keep_contents) {
+    io.emit('send keep', keep_contents);
+  });
+
+  socket.on('send problem', function(problem_contents) {
+    io.emit('send problem', problem_contents);
+  });
+
+  socket.on('send try', function(try_contents) {
+    io.emit('send try', try_contents);
   });
 });
 

@@ -14,11 +14,18 @@ module.exports = {
     loaders: [{
       test: /\.js$/,
       exclude: /node_modules/,
-      loader: 'babel-loader'
+      loader: 'babel',
+      query: {
+        presets: ['react', 'es2015']
+      }
     },
     {
       test: /\.jsx$/,
-      loader: 'jsx-loader?harmony'
+      // loader: 'jsx-loader?harmony'
+      loader: 'babel',
+      query: {
+        presets: ['react', 'es2015']
+      }
     }]
   },
   // module対象のファイルを指定
